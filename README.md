@@ -2,14 +2,7 @@
 
 End-to-end machine learning project on **~70,000 real patient records** from the public [Cardiovascular Disease dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Includes **hyperparameter tuning** (RandomizedSearchCV), 5 classifiers, cross-validation, saved models, and a Streamlit dashboard.
 
----
 
-## Resume bullet (copy-paste)
-
-> **PulseML — Cardiovascular Disease Prediction** | Python, scikit-learn, XGBoost, Streamlit  
-> Built an end-to-end ML pipeline on **70,000+ patient records**: data cleaning, feature engineering (BMI), **RandomizedSearchCV hyperparameter tuning** for 5 models (Logistic Regression, Random Forest, Gradient Boosting, XGBoost, HistGradientBoosting), 5-fold CV, ROC-AUC **0.80+**. Deployed the best tuned model via Streamlit and CLI with serialized pipelines.
-
----
 
 ## Dataset
 
