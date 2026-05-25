@@ -1,0 +1,47 @@
+{
+  "logistic_regression": {
+    "best_params": {
+      "classifier__C": 78.52755494724258,
+      "classifier__solver": "lbfgs"
+    },
+    "cv_roc_auc_tune": 0.7918
+  },
+  "random_forest": {
+    "best_params": {
+      "classifier__max_depth": 10,
+      "classifier__max_features": "log2",
+      "classifier__min_samples_leaf": 6,
+      "classifier__n_estimators": 279
+    },
+    "cv_roc_auc_tune": 0.7989
+  },
+  "gradient_boosting": {
+    "best_params": {
+      "classifier__learning_rate": 0.07494481426168349,
+      "classifier__max_depth": 3,
+      "classifier__n_estimators": 114,
+      "classifier__subsample": 0.896398788362281
+    },
+    "cv_roc_auc_tune": 0.7999
+  },
+  "xgboost": {
+    "best_params": {
+      "classifier__colsample_bytree": 0.8770181444490113,
+      "classifier__learning_rate": 0.03308767414437037,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 237,
+      "classifier__scale_pos_weight": 1.0182562513830493,
+      "classifier__subsample": 0.753084777669569
+    },
+    "cv_roc_auc_tune": 0.7992
+  },
+  "hist_gradient_boosting": {
+    "best_params": {
+      "classifier__l2_regularization": 0.0022464551680532615,
+      "classifier__learning_rate": 0.031591795339183985,
+      "classifier__max_depth": 4,
+      "classifier__max_leaf_nodes": 90
+    },
+    "cv_roc_auc_tune": 0.7994
+  }
+}

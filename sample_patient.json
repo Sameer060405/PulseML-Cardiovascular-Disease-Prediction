@@ -1,0 +1,14 @@
+{
+  "age_years": 50,
+  "gender": 2,
+  "height": 170,
+  "weight": 82,
+  "bmi": 28.4,
+  "ap_hi": 140,
+  "ap_lo": 90,
+  "cholesterol": 2,
+  "gluc": 2,
+  "smoke": 1,
+  "alco": 0,
+  "active": 0
+}

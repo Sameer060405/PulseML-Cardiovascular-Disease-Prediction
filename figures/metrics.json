@@ -1,0 +1,98 @@
+{
+  "dataset_name": "Cardiovascular Disease (Sulanova et al., ~70k patients)",
+  "dataset_rows": 68404,
+  "train_rows": 54723,
+  "test_rows": 13681,
+  "positive_rate": 0.4955,
+  "hyperparameter_tuning": true,
+  "tune_sample_size": 30000,
+  "tune_n_iter": 18,
+  "best_model": "xgboost",
+  "models": [
+    {
+      "model": "xgboost",
+      "accuracy": 0.7331,
+      "precision": 0.7477,
+      "recall": 0.6963,
+      "f1": 0.7211,
+      "roc_auc": 0.8011,
+      "cv_roc_auc_mean": 0.8015,
+      "cv_roc_auc_std": 0.0047,
+      "tune_cv_roc_auc": 0.7992,
+      "best_params": {
+        "classifier__colsample_bytree": 0.8770181444490113,
+        "classifier__learning_rate": 0.03308767414437037,
+        "classifier__max_depth": 5,
+        "classifier__n_estimators": 237,
+        "classifier__scale_pos_weight": 1.0182562513830493,
+        "classifier__subsample": 0.753084777669569
+      }
+    },
+    {
+      "model": "gradient_boosting",
+      "accuracy": 0.7337,
+      "precision": 0.7499,
+      "recall": 0.6941,
+      "f1": 0.7209,
+      "roc_auc": 0.8003,
+      "cv_roc_auc_mean": 0.8009,
+      "cv_roc_auc_std": 0.0048,
+      "tune_cv_roc_auc": 0.7999,
+      "best_params": {
+        "classifier__learning_rate": 0.07494481426168349,
+        "classifier__max_depth": 3,
+        "classifier__n_estimators": 114,
+        "classifier__subsample": 0.896398788362281
+      }
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.7314,
+      "precision": 0.7568,
+      "recall": 0.6747,
+      "f1": 0.7134,
+      "roc_auc": 0.7982,
+      "cv_roc_auc_mean": 0.8003,
+      "cv_roc_auc_std": 0.0056,
+      "tune_cv_roc_auc": 0.7989,
+      "best_params": {
+        "classifier__max_depth": 10,
+        "classifier__max_features": "log2",
+        "classifier__min_samples_leaf": 6,
+        "classifier__n_estimators": 279
+      }
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.7315,
+      "precision": 0.7515,
+      "recall": 0.6845,
+      "f1": 0.7164,
+      "roc_auc": 0.7982,
+      "cv_roc_auc_mean": 0.8002,
+      "cv_roc_auc_std": 0.0045,
+      "tune_cv_roc_auc": 0.7994,
+      "best_params": {
+        "classifier__l2_regularization": 0.0022464551680532615,
+        "classifier__learning_rate": 0.031591795339183985,
+        "classifier__max_depth": 4,
+        "classifier__max_leaf_nodes": 90
+      }
+    },
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.725,
+      "precision": 0.7466,
+      "recall": 0.6737,
+      "f1": 0.7083,
+      "roc_auc": 0.7908,
+      "cv_roc_auc_mean": 0.7918,
+      "cv_roc_auc_std": 0.005,
+      "tune_cv_roc_auc": 0.7918,
+      "best_params": {
+        "classifier__C": 78.52755494724258,
+        "classifier__solver": "lbfgs"
+      }
+    }
+  ]
+}
