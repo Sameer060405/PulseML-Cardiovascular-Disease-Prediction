@@ -16,16 +16,7 @@ End-to-end machine learning project on **~70,000 real patient records** from the
 
 ---
 
-## Quick start
 
-```bash
-cd aiml_project
-python -m venv venv
-venv\Scripts\activate          # Windows
-pip install -r requirements.txt
-python run_pipeline.py         # Download + tune + train (~15–40 min)
-streamlit run app/streamlit_app.py
-```
 
 ---
 
@@ -68,8 +59,4 @@ aiml_project/
 └── app/streamlit_app.py
 ```
 
----
 
-## License
-
-MIT — portfolio use.
